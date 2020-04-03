@@ -18,15 +18,14 @@ $grid-breakpoints: (
     border-radius: $fallback-border-radius;
   }
 }
-// Minimum breakpoint width. Null for the smallest (first) breakpoint.
-//
+// 最小断点宽度。对于最小（第一个）断点为空。
 //    >> breakpoint-min(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
 //    576px
 @function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
   $min: map-get($breakpoints, $name);
   @return if($min != 0, $min, null);
 }
-// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+//至少具有最小断点宽度的媒体. No query for the smallest breakpoint.
 // 使@content应用于给定的断点并使其更宽。
 @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
   $min: breakpoint-min($name, $breakpoints);
