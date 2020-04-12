@@ -1,2 +1,7 @@
 @use "code"
 @use "lists"
+@use "corners"
+
+.button
+  @include corners.rounder
+  padding: 5px+corners.$redius
