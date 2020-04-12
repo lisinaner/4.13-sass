@@ -20,19 +20,40 @@
 .icon-eye:before {
   display: inline-block;
   font-family: "Icon Font";
+  content: 1;
+}
+
+.icon-start:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: 2;
+}
+
+.icon-stop:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: 3;
+}
+
+.icon-eye:before {
+  display: inline-block;
+  font-family: "Icon Font";
   content: "";
+  font-size: 12px;
 }
 
 .icon-start:before {
   display: inline-block;
   font-family: "Icon Font";
   content: "";
+  font-size: 16px;
 }
 
 .icon-stop:before {
   display: inline-block;
   font-family: "Icon Font";
   content: "";
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=for.css.map */
