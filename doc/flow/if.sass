@@ -1,0 +1,10 @@
+@mixin avator($size,$circle:false)
+  width: $size
+  height: $size
+  @if($circle)
+    border-radius: $size/2
+
+.square-av
+  @include avator(100px,$circle:false)
+.circle-av
+  @include avator(100px,$circle:true)
